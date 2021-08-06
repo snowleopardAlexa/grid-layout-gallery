@@ -5,55 +5,89 @@
     box-sizing: border-box;
   }
 
-  .box-one {
+  .box1 {
     background: brown;
-    height: 200px;
+    grid-area: box1;
+    height: 350px;
+ 
 }
 
-.box-two {
+.box2 {
     background: chartreuse;
+    grid-area: box2;
+
 }
 
-.box-three {
+.box3 {
     background: cornflowerblue;
+    grid-area: box3;
+  
 }
 
-.box-four {
+.box4 {
     background: red;
+    grid-area: box4;
+  
 }
 
-.box-five {
+.box5 {
     background: purple;
+    grid-area: box5;
+
 }
 
-.box-six {
+.box6 {
     background: palegoldenrod;
+    grid-area: box6;
+
 }
 
-.box-seven {
+.box7 {
     background: orange;
+    grid-area: box7;
+ 
 }
 
-.box-eight {
+.box8 {
     background: pink;
+    grid-area: box8;
+
 }
 
-.box-nine {
+.box9 {
     background: green;
+    grid-area: box9;
+ 
 }
 
-.box-ten {
+.box10 {
     background: brown;
+    grid-area: box10;
+
+}
+
+.box11 {
+    background: black;
+    grid-area: box11;
+
+}
+
+.box12 {
+    background: lightcoral;
+    grid-area: box12;
+  
 }
 
 main {
-    height: auto;
+    height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
-    "box1 box1"
-    "box2 ."
-    ". box3";
+    "box1 box2 box3 box4"
+    "box5 box5 box5 box5"
+    "box6 box7 box8 box8"
+    "box9 box9 box9 box10"
+    "box11 box11 box12 box12";
     /* "box3 ." - a dot is an empty space in a grid */
 }
