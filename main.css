@@ -7,6 +7,7 @@
 
   .box-one {
     background: brown;
+    height: 200px;
 }
 
 .box-two {
@@ -18,38 +19,38 @@
 }
 
 .box-four {
-
+    background: red;
 }
 
 .box-five {
-
+    background: purple;
 }
 
 .box-six {
-
+    background: palegoldenrod;
 }
 
 .box-seven {
-
+    background: orange;
 }
 
 .box-eight {
-
+    background: pink;
 }
 
 .box-nine {
-
+    background: green;
 }
 
 .box-ten {
-    
+    background: brown;
 }
 
 main {
-    height: 100vh;
+    height: auto;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-areas: 
     "box1 box1"
     "box2 ."
