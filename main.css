@@ -39,7 +39,7 @@
 .box4 {
     background: red;
     grid-area: box4;
-    background-image: url("img/jaguar.jpg");
+    background-image: url("img/leopard.jpg");
     background-color: #cccccc; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -105,7 +105,7 @@
 .box10 {
     background: brown;
     grid-area: box10;
-    background-image: url("img/tiger.jpg");
+    background-image: url("img/cloudedleopard.jpg");
     background-color: #cccccc; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -116,7 +116,7 @@
 .box11 {
     background: black;
     grid-area: box11;
-    background-image: url("img/tiger.jpg");
+    background-image: url("img/ocelot.jpg");
     background-color: #cccccc; 
     background-position: center; 
     background-repeat: no-repeat; 
@@ -139,7 +139,8 @@ main {
     height: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    grid-template-rows: repeat(5, 300px);
+    grid-template-rows: repeat(5, 400px);
+    grid-gap: .5rem;xzv 
     grid-auto-flow: dense;
     grid-template-areas: 
     "box1 box2 box3 box4"
