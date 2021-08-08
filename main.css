@@ -139,8 +139,7 @@ main {
     height: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    grid-template-rows: repeat(5, 400px);
-    grid-gap: .5rem;xzv 
+    grid-template-rows: 300px auto;
     grid-auto-flow: dense;
     grid-template-areas: 
     "box1 box2 box3 box4"
