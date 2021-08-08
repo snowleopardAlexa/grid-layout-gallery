@@ -1,0 +1,30 @@
+*,
+*:before,
+*:after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: blueviolet;
+}
+
+.wrapper {
+    max-width: 75rem;
+    padding: 2rem;
+    margin: 0 auto;
+}
+
+/* gallery */
+.img-gallery {
+  display: grid;
+  /* 3 columns, 1 fraction */
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(4, 12.5rem);
+  gap: .5rem;
+}
+
+/* gallery image */
+.gallery-img 
