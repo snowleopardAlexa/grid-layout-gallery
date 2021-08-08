@@ -141,3 +141,15 @@ body {
     width: 100%;
 }
 
+/* MAKE IT RESPONSIVE */
+@media screen and (max-width: 60rem) {
+    .wrapper {
+        padding: 1rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-row: repeat
+    }
+}
+
