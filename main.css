@@ -1,151 +1,250 @@
 /* basic page reset */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  }
-
-  .box1 {
-    grid-area: box1;
-    background-image: url("img/cheetah.jpg");
-    background-color: #cccccc; /* used if image is unavailable */
-    background-position: center; /* Center the image */
-    background-repeat: no-repeat; /* Do not repeat the image */
-    background-size: cover; /* Resize the background image to cover the entire container */
+*,
+*:before,
+*:after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
 }
 
-.box2 {
-    background: chartreuse;
-    grid-area: box2;
-    background-image: url("img/tiger.jpg");
-    background-color: #cccccc; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover; 
-
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #fff;
 }
 
-.box3 {
-    background: cornflowerblue;
-    grid-area: box3;
-    background-image: url("img/serval.jpg");
-    background-color: #cccccc; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover;
-  
+.wrapper {
+    max-width: 100%; /* 95 * 16 = 1520px */
+    margin: 0 auto;
 }
 
-.box4 {
-    background: red;
-    grid-area: box4;
-    background-image: url("img/leopard.jpg");
-    background-color: #cccccc; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover;
-  
+/* gallery */
+.gallery {
+  border: 15px solid rgb(19, 18, 18);  
+  display: grid;
+  /* 3 columns, 1 fraction */
+  grid-template-columns: repeat(3, 1fr);
+  /* 4 columns of 12.5rem size */
+  grid-template-rows: repeat(4, 12.5rem);
+  /* gap: .5rem; */
 }
 
-.box5 {
-    background: purple;
-    grid-area: box5;
-    background-image: url("img/lion.jpg");
-    background-color: #cccccc; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover;
-
+/* gallery layout */
+.gallery__item--1 {
+    grid-column: 2 / span 1;
+    grid-row: 1 / span 1;
 }
 
-.box6 {
-    background: palegoldenrod;
-    grid-area: box6;
-    background-image: url("img/mountainlion.jpg");
-    background-color: #cccccc; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover;
-
+.gallery__item--2 {
+    grid-column: 2 / span 1;
+    grid-row: 2 / span 2;
 }
 
-.box7 {
-    background: orange;
-    grid-area: box7;
-    background-image: url("img/caracal.jpg");
-    background-color: #cccccc; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover;
- 
+.gallery__item--3 {
+    grid-column: 1 / span 1;
+    grid-row: 1 / span 2;
 }
 
-.box8 {
-    background: pink;
-    grid-area: box8;
-    background-image: url("img/lynx.jpg");
-    background-color: #cccccc; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover;
-
+.gallery__item--4 {
+    grid-column: 3 / span 1;
+    grid-row: 1 / span 2;
 }
 
-.box9 {
-    background: green;
-    grid-area: box9;
-    background-image: url("img/snowleopard.jpg");
-    background-color: #cccccc; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover;
- 
+.gallery__item--5 {
+    grid-column: 1 / span 1;
+    grid-row: 3 / span 3;
 }
 
-.box10 {
-    background: brown;
-    grid-area: box10;
-    background-image: url("img/cloudedleopard.jpg");
-    background-color: #cccccc; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover;
-
+.gallery__item--6 {
+    grid-column: 2 / span 1;
+    grid-row: 4 / span 2;
 }
 
-.box11 {
-    background: black;
-    grid-area: box11;
-    background-image: url("img/ocelot.jpg");
-    background-color: #cccccc; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover;
-
+.gallery__item--7 {
+    grid-column: 2 / span 1;
+    grid-row: 4 / span 3;
 }
 
-.box12 {
-    background: lightcoral;
-    grid-area: box12;
-    background-image: url("img/tiger.jpg");
-    background-color: #cccccc; 
-    background-position: center; 
-    background-repeat: no-repeat; 
-    background-size: cover;
-  
+.gallery__item--8 {
+    grid-column: 3 / span 1;
+    grid-row: 4 / span 1;
 }
 
-main {
+.gallery__item--9 {
+    grid-column: 3 / span 1;
+    grid-row: 3 / span 2;
+}
+
+.gallery__item--10 {
+    grid-column: 3 / span 1;
+    grid-row: 5 / span 1;
+}
+
+.gallery__item--11 {
+    grid-column: 2 / span 2;
+    grid-row: 12 / span 2;
+}
+
+.gallery__item--12 {
+    grid-column: 3 / span 1;
+    grid-row: 6 / span 1;
+}
+
+.gallery__item--13 {
+    grid-column: 1 / span 3;
+    grid-row: 8 / span 1;
+}
+
+.gallery__item--14 {
+    grid-column: 3 / span 1;
+    grid-row: 9 / span 1;
+}
+
+.gallery__item--15 {
+    grid-column: 1 / span 1;
+    grid-row: 6 / span 1;
+}
+
+.gallery__item--16 {
+    grid-column: 1 / span 1;
+    grid-row: 9 / span 1;
+}
+
+.gallery__item--17 {
+    grid-column: 1 / span 1;
+    grid-row: 10 / span 1;
+}
+
+.gallery__item--18 {
+    grid-column: 3 / span 1;
+    grid-row: 10 / span 1;
+}
+
+.gallery__item--19 {
+    grid-column: 2 / span 1;
+    grid-row: 10 / span 1;
+}
+
+.gallery__item--20 {
+    grid-column: 2 / span 2;
+    grid-row: 9 / span 1;
+}
+
+.gallery__item--21 {
+    grid-column: 3 / span 1;
+    grid-row: 11 / span 1;
+}
+
+.gallery__item--22 {
+    grid-column: 2 / span 1;
+    grid-row: 11 / span 1;
+}
+
+.gallery__item--23 {
+    grid-column: 1 / span 1;
+    grid-row: 12 / span 1;
+}
+
+.gallery__item--24 {
+    grid-column: 1 / span 1;
+    grid-row: 13 / span 1;
+}
+
+.gallery__item--25 {
+    grid-column: 1 / span 1;
+    grid-row: 11 / span 1;
+}
+
+
+/* gallery image */
+.gallery__image {
+    width: 100%;
     height: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    grid-template-rows: 300px auto;
-    grid-auto-flow: dense;
-    grid-template-areas: 
-    "box1 box2 box3 box4"
-    "box5 box5 box5 box5"
-    "box6 box7 box8 box8"
-    "box9 box9 box9 box10"
-    "box11 box11 box12 box12";
-    /* "box3 ." - a dot is an empty space in a grid */
+    object-fit: cover;
+    transform: scale(1.05);
+    transition: 
+       transform .5s,
+       filter .5s
 }
+
+.gallery__link:hover .gallery__image {
+    transform: scale(1.2);
+    filter: blur(2px);
+}
+
+/* gallery link */
+.gallery__link {
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+/* gallery link overlay */
+.gallery__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: rgba(73, 24, 24, 0.4);
+    font-size: 1.5rem;
+    color: #fff;
+    font-weight: 700;
+    text-transform: uppercase;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity .2s;
+}
+
+.gallery__link:hover .gallery__overlay {
+    opacity: 1;
+}
+
+/* gallery overlay text */
+.gallery__overlay span {
+    position: relative;
+    line-height: 3rem;
+}
+
+.gallery__overlay span:before,
+.gallery__overlay span:after {
+    content: "";
+    position: absolute;
+    height: 2px;
+    width: 0;
+    background: #fff;
+    transition: width .3s ease-out .2s;
+}
+
+.gallery__overlay span:before {
+    top: 0;
+    left: 0;
+}
+
+.gallery__overlay span:after {
+    bottom: 0;
+    right: 0;
+}
+
+.gallery__link:hover .gallery__overlay span:before,
+.gallery__link:hover .gallery__overlay span:after {
+    width: 100%;
+}
+
+/* MAKE IT RESPONSIVE 
+@media screen and (max-width: 60rem) {
+    .wrapper {
+        padding: 1rem;
+    }
+
+    .gallery {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-row: repeat
+    }
+}*/
