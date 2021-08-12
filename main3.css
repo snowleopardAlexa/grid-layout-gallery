@@ -12,7 +12,8 @@
     grid-template-columns: repeat(auto-fill, 300px); */
     /* it does not generate extra columns
     grid-template-columns: repeat(auto-fit, 300px); */
-    
+    /* 300px - min value the image has, 1fr - max value the image has when the browser is resized */
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .gallery img {
