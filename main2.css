@@ -22,7 +22,7 @@
     background-repeat: no-repeat;
     background-position: center;
     grid-area: box1;
-    /* flexbox applied to one grid area
+    /* flexbox applied to one grid area 
     align-self: center; */
 }
 
@@ -31,10 +31,11 @@
     background-repeat: no-repeat;
     background-position: center;
     grid-area: box2;
-    /* flexbox aligning items(text) center to one grid area
+    /* flexbox aligning items(text) center to one grid area */
     display: flex;
     justify-content: space-around;
-    align-items: center; */
+    align-items: center;
+    text-transform: uppercase;
 }
 
 .box3 {
