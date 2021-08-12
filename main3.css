@@ -6,7 +6,11 @@
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(3, 200px)
+    /* not responsive - 3 columns per 300px
+    grid-template-columns: repeat(3, 300px); */
+    /* responsive - grid cell from the top goes down when we resize the browser 
+    grid-template-columns: repeat(auto-fill, 300px); */
+    
 }
 
 .gallery img {
