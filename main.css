@@ -29,129 +29,161 @@ body {
 }
 
 /* gallery layout */
+
+/* serval */
 .gallery__item--1 {
     grid-column: 2 / span 1;
     grid-row: 1 / span 1;
 }
 
+/* lion */
 .gallery__item--2 {
     grid-column: 2 / span 1;
     grid-row: 2 / span 2;
 }
 
+/* tiger */
 .gallery__item--3 {
     grid-column: 1 / span 1;
     grid-row: 1 / span 2;
 }
 
+/* leopard */
 .gallery__item--4 {
     grid-column: 3 / span 1;
     grid-row: 1 / span 2;
 }
 
+/* caracal */
 .gallery__item--5 {
     grid-column: 1 / span 1;
     grid-row: 3 / span 3;
 }
 
+/* dingo **/
 .gallery__item--6 {
-    grid-column: 2 / span 1;
-    grid-row: 4 / span 2;
+    grid-column: 1 / span 1;
+    grid-row: 14 / span 1;
 }
 
+/* giraffe **/
 .gallery__item--7 {
     grid-column: 2 / span 1;
     grid-row: 4 / span 3;
 }
 
+/* mountain lion **/
 .gallery__item--8 {
     grid-column: 3 / span 1;
     grid-row: 4 / span 1;
 }
 
+/* impala **/
 .gallery__item--9 {
     grid-column: 3 / span 1;
     grid-row: 3 / span 2;
 }
 
+/* snow leopard **/
 .gallery__item--10 {
     grid-column: 3 / span 1;
     grid-row: 5 / span 1;
 }
 
+/* hippo **/
 .gallery__item--11 {
     grid-column: 2 / span 2;
     grid-row: 12 / span 2;
 }
 
+/* coyote */
 .gallery__item--12 {
     grid-column: 3 / span 1;
     grid-row: 6 / span 1;
 }
 
+/* zebra */
 .gallery__item--13 {
     grid-column: 1 / span 3;
     grid-row: 8 / span 1;
 }
 
+/* fennec fox */
 .gallery__item--14 {
-    grid-column: 3 / span 1;
-    grid-row: 9 / span 1;
+    grid-column: 2 / span 1;
+    grid-row: 14 / span 1;
 }
 
+/* wolf **/
 .gallery__item--15 {
     grid-column: 1 / span 1;
     grid-row: 6 / span 1;
 }
 
+/* white fox **/
 .gallery__item--16 {
     grid-column: 1 / span 1;
     grid-row: 9 / span 1;
 }
 
+/* wild dog **/
 .gallery__item--17 {
     grid-column: 1 / span 1;
     grid-row: 10 / span 1;
 }
 
+/* red fox **/
 .gallery__item--18 {
     grid-column: 3 / span 1;
     grid-row: 10 / span 1;
 }
 
+/* clouded leopard **/
 .gallery__item--19 {
     grid-column: 2 / span 1;
     grid-row: 10 / span 1;
 }
 
+/* crocodile **/
 .gallery__item--20 {
     grid-column: 2 / span 2;
     grid-row: 9 / span 1;
 }
 
+/* meerkat **/
 .gallery__item--21 {
     grid-column: 3 / span 1;
     grid-row: 11 / span 1;
 }
 
+/* okapi **/
 .gallery__item--22 {
     grid-column: 2 / span 1;
     grid-row: 11 / span 1;
 }
 
+/* tucan **/
 .gallery__item--23 {
     grid-column: 1 / span 1;
     grid-row: 12 / span 1;
 }
 
+/* red fox **/ 
 .gallery__item--24 {
     grid-column: 1 / span 1;
     grid-row: 13 / span 1;
 }
 
+/* cheetah **/ 
 .gallery__item--25 {
     grid-column: 1 / span 1;
     grid-row: 11 / span 1;
+}
+
+/* lynx **/ 
+.gallery__item--26 {
+    grid-column: 3 / span 1;
+    grid-row: 14 / span 1;
 }
 
 
