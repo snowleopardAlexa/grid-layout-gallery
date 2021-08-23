@@ -23,7 +23,7 @@ body {
   display: grid;
   /* 3 columns, 1 fraction */
   grid-template-columns: repeat(3, 1fr);
-  /* 4 columns of 12.5rem size */
+  /* 4 columns of 12.5rem/200px size */
   grid-template-rows: repeat(4, 12.5rem);
   /* gap: .5rem; */
 }
@@ -66,7 +66,7 @@ body {
     grid-row: 14 / span 1;
 }
 
-/* giraffe **/
+/* bird **/
 .gallery__item--7 {
     grid-column: 2 / span 1;
     grid-row: 4 / span 3;
@@ -269,14 +269,18 @@ body {
     width: 100%;
 }
 
-/* MAKE IT RESPONSIVE 
-@media screen and (max-width: 60rem) {
-    .wrapper {
-        padding: 1rem;
-    }
-
+/* MAKE IT RESPONSIVE */
+@media screen and (max-width: 560px) {
     .gallery {
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-row: repeat
+        display: block;
     }
-}*/
+    .galley__item {
+        margin: 250rem;
+    }
+    .gallery__link {
+        height: 90vw;
+    }
+    .gallery__overlay {
+        font-size: 1rem;
+    }
+}
