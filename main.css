@@ -274,9 +274,6 @@ body {
     .gallery {
         display: block;
     }
-    .galley__item {
-        margin: 250rem;
-    }
     .gallery__link {
         height: 90vw;
     }
